@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">practica_academica_01</string>
+    <string name="agregar_nuevo_alumno">Agregar nuevo alumno</string>
+    <string name="agregar">Agregar</string>
+    <string name="alumno_agregado_exitosamente">Alumno agregado exitosamente</string>
+    <string name="por_favor_completa_campos">Por favor, completa todos los campos obligatorios</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="lista_actualizada">Lista actualizada</string>
+    <string name="eliminar_todos">Eliminar todos</string>
+    <string name="estas_seguro_eliminar">¿Estás seguro de que deseas eliminar todos los alumnos?</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="todos_alumnos_eliminados">Todos los alumnos eliminados</string>
+    <string name="configuracion_proximamente">Configuración (próximamente)</string>
+    <string name="acerca_de">Acerca de</string>
+    <string name="acerca_descripcion">Aplicación de práctica académica\nVersión 1.0\nDesarrollado para Android</string>
+    <string name="ok">OK</string>
+
+    <!-- Menu strings -->
+    <string name="actualizar">Actualizar</string>
+    <string name="configuracion">Configuración</string>
 </resources>

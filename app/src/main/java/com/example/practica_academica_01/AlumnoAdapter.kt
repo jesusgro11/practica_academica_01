@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
-class AlumnoAdapter(private val context: Context, private val listAlumnos: List<Alumno>) : RecyclerView.Adapter<AlumnoAdapter.ViewHolder>() {
+class AlumnoAdapter(private val context: Context, private val listAlumnos: MutableList<Alumno>) : RecyclerView.Adapter<AlumnoAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AlumnoAdapter.ViewHolder {
         // inflates the item_persona_view
@@ -32,6 +32,23 @@ class AlumnoAdapter(private val context: Context, private val listAlumnos: List<
 
     override fun getItemCount(): Int {
         return listAlumnos.size
+    }
+
+    // Método para agregar un nuevo alumno
+    fun addAlumno(alumno: Alumno) {
+        listAlumnos.add(alumno)
+        notifyItemInserted(listAlumnos.size - 1)
+    }
+
+    // Método para eliminar todos los alumnos
+    fun clearAll() {
+        listAlumnos.clear()
+        notifyDataSetChanged()
+    }
+
+    // Método para actualizar la lista
+    fun refreshList() {
+        notifyDataSetChanged()
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
